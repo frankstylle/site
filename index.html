@@ -57,6 +57,39 @@
       </article>
     </section>
 
+     <section id="habilidades">
+
+        <h2>Habilidades e Tecnologias</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Tecnologia</th>
+              <th>Nível</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Iniciante</td>
+              <td>Capaz de construir estruturas de páginas de web sêmanticas e responsivas.</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Intermediário</td>
+              <td>Experiência com flexbox, grid e animações CSS.</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Básico</td>
+              <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+            </tr>
+          </tbody>
+        </table>
+
+     </section>
+
     <footer>
       <p>Todos os direitos reservados a Franlin</p>
 
@@ -65,12 +98,34 @@
 
         <p>Tem um projeto em mente? Entre em contato.</p>
 
-        <address>
-          E-mail:
-          <a href="mailto:pdv.franksilva@gmail.com ">pdv.franksilva@gmail.com</a
-          ><br />
-          Telefone: <a href="tel:+5547999999999">(00) 0 0000-0000</a>
-        </address>
+        <form action="">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required><br>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone"><br>
+
+          <label for="assunto">Assunto:</label>
+          <select name="assunto" id="assunto">
+            <option value="orcamento">Orçamento</option>
+            <option value="dúvida">Dúvida</option>
+            <option value="outro">Outro</option>
+          </select><br>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea><br>
+
+          <input type="checkbox" id="inscricao" name="inscricao">
+          <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+          <br>
+
+          <input type="submit" value="Enviar mensagem">
+
+        </form>
       </section>
     </footer>
   </body>
